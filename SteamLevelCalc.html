@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <script src="SteamBadgeCalculator.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Steam level Calculator</h1>
+        <p class="desLbl">Enter your wanted level and price of badge for calculation</p>
+        <div class="txtCon">
+           <!-- <p class="desLbl">Wated Level:</p> -->
+            <input id="txtLvl" onkeypress="pressEnter()" type="number"  min="0" max="9999" placeholder="Level Wanted" name="txtLvl">
+        </div>
+        <div class="txtCon">
+           <!-- <p class="desLbl">Price Badge:</p> -->
+            <input id="txtPricePerBadge"  onkeypress="pressEnter()" type="number" step=".01" min="0" max="9999" placeholder="Price for Badge" name="txtPricePerBadge">
+        </div>
+        <button type="button" id="btnRunCalc" onclick="calcLevel()">Work it out</button>
+    </div>
+    <div class="content" id="calResponse">
+        <p id="expNeeded" class="desLbl"></p>
+        <p id="badgesNeeded" class="desLbl"></p>
+        <p id="totalPrice" class="desLbl"></p>
+    </div>
+</body>
+
+</html>
